@@ -1,0 +1,298 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Container Styles */
+.container {
+    background-color: #a7cae7;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Part 1 */
+.content-part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Section */
+.heading {
+    text-align: center;
+    gap: 20px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style:none;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Image Section */
+.img img {
+    width: 100%;                
+    height: auto;          
+ /* Adjusts height automatically based on width */
+    max-height: 500px;         
+/* Optional: slightly larger height if needed */
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Text Content */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.text-content span {
+    color: #308dda;
+    font-weight: bold;
+
+}
+
+#tips {
+    list-style: circle;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+/* Social Media Links */
+#social {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+#social ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+#social ul li i {
+    font-size: 50px;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#social ul li i:hover {
+    transform: scale(1.2);
+}
+
+.fb { color: #4267B2; }
+.twitter { color: #1DA1F2; }
+.linked { color: #0A66C2; }
+
+/* Author Section */
+.author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color: #eaf4fc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.author h3 {
+    background-color: #308dda;
+    color: white;
+    width: 200px;
+    border:1px solid ;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    width: fit-content;
+}
+
+.author .author-text p {
+    font-size: 25px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Form Section */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form h3 {
+    background-color: #308dda;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #308dda;
+    outline: none;
+    box-shadow: 0 0 5px rgba(48, 141, 218, 0.5);
+}
+
+.form button {
+    padding: 12px;
+    font-size: 20px;
+    color: white;
+    background-color: #308dda;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #267bbd;
+}
+
+/* Responsive Design */
+
+/* For Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+    .heading h1 {
+        font-size: 28px;
+    }
+
+    .text-content {
+        font-size: 18px;
+    }
+
+    #social ul li i {
+        font-size: 40px;
+    }
+
+    .author h3 {
+        font-size: 22px;
+    }
+
+    .author .TXT p {
+        font-size: 18px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .heading h1 {
+        font-size: 24px;
+    }
+
+    .text-content {
+        font-size: 16px;
+    }
+
+    #social ul {
+        gap: 15px;
+    }
+
+    #social ul li i {
+        font-size: 35px;
+    }
+    .author-text p
+    {
+        font-size: 25px;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 16px;
+    }
+
+    .form button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1
+{
+    font-size: 18px;
+}
+.list ul li
+{
+    font-size: 15px
+};
+    .form {
+        max-width: 100%;
+    }
+
+    .form input,
+    .form textarea {
+        font-size: 14px;
+    }
+
+    .form button {
+        font-size: 16px;
+    }
+
+    .text-content {
+        font-size: 15px;
+    }
+
+    .heading h1 {
+        font-size: 20px;
+    }
+    .author-text p
+    {
+        font-size: 15px;
+    }
+}
